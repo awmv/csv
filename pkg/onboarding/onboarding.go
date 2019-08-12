@@ -16,13 +16,8 @@ func OnboardRequest(id int) error {
 		Get(uri)
 	if err != nil {
 		log.Println(err)
-		// log.Println(res.Status)
 		return err
 	}
-
-	//res.IsError()
-	//res.StatusCode
-	//res.Status
 
 	log.Println(id, res)
 	return err
